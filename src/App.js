@@ -1,10 +1,16 @@
-import logo from './logo.svg';
+
+import { Router } from 'react-router-dom';
 import './App.css';
+import Layout from './Component/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
-     <h1>Al Fatih Remake</h1>
+      <Layout>
+        <Router>
+          
+        </Router>
+      </Layout>
     </div>
   );
 }
