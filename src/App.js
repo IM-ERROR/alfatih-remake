@@ -1,15 +1,16 @@
 
-import { Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './Component/Layout/Layout';
+import UnitPendidikan from './Pages/UnitPendidikan';
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Router>
-          
-        </Router>
+        <Routes>
+          <Route path="/unitpendidikan" element={<UnitPendidikan />}></Route>
+        </Routes>
       </Layout>
     </div>
   );

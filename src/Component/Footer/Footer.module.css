@@ -1,0 +1,39 @@
+.footer_container {
+    background-color: #00B2E3;
+    display: flex;
+    justify-content: space-evenly;
+    height: 144px;
+    width: 100%;
+}
+
+.footer_icons {
+    margin-top: -10px;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+}
+
+.icons {
+    height: 25px;
+    width: 26px;
+}
+
+.icons :hover {
+    background-color: #00B2E3;
+}
+
+.title {
+    color: #fff;
+}
+
+.footer_left, .footer_right {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+}
