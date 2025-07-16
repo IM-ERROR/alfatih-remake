@@ -1,0 +1,29 @@
+.container_nav {
+    background-color: rgba(77, 77, 77, 0.336);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_logo {
+    margin: 8px;
+    height: 58px;
+    width: 240px;
+}
+
+.menu_nav {
+    margin: -8px;
+    margin-right: 80px;
+    display: flex;
+}
+
+.menu_nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.nav_item{
+    color: inherit;
+    text-decoration: none;
+}
