@@ -1,9 +1,8 @@
-import PendaftaranPage from "../Component/PendaftaranPage/PendaftaranPage";
 
 function Pendaftaran () {
     return(
         <div>
-            <PendaftaranPage />
+            <h1>Ini adalah Pendaftaran</h1>
         </div>
     )
 }
