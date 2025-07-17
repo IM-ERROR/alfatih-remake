@@ -1,9 +1,7 @@
-import UnitPendidikanPage from "../Component/UnitPendidikanPage/UnitPendidikanPage";
-
-function UnitPendidikan() {
-    return (
+function UnitPendidikan () {
+    return(
         <div>
-            <UnitPendidikanPage />
+            <h1>Ini adalah UnitPendidikan</h1>
         </div>
     )
 }
