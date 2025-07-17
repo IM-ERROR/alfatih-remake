@@ -6,7 +6,15 @@
     width: 100%;
 }
 
+.footer_left, .footer_right {
+    font-family: 'Poppins-regular', sans-serif;
+    margin-top: 24px;
+}
+
 .footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
     margin-top: -10px;
 }
 
@@ -20,20 +28,28 @@
     border-radius: 35px;
 }
 
-.icons {
-    height: 25px;
-    width: 26px;
+.shapes:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease;
 }
 
-.icons :hover {
-    background-color: #00B2E3;
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_fb_yt {
+    height: 25px;
+    width: 100%;
+}
+
+.icons_ig_x {
+    height: 20px;
+    width: 100%;
 }
 
 .title {
     color: #fff;
 }
 
-.footer_left, .footer_right {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 16px;
-}
