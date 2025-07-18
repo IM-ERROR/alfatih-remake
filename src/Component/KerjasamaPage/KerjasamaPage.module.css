@@ -1,0 +1,14 @@
+.heros {
+    display: flex;
+    background-image: url(../../../public/image-alfatih/Kerjasama/kerjasama.png);
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kosong {
+    height: 560px;
+}

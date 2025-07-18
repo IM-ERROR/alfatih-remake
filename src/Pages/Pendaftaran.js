@@ -1,4 +1,3 @@
-
 function Pendaftaran () {
     return(
         <div>
