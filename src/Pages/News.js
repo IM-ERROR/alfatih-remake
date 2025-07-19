@@ -1,7 +1,9 @@
+import NewsPage from "../Component/NewsPage/NewsPage";
+
 function News () {
     return(
         <div>
-            <h1>Ini adalah News</h1>
+            <NewsPage />
         </div>
     )
 }
