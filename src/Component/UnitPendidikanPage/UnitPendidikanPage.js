@@ -6,6 +6,8 @@ function UnitPendidikanPage() {
             <div>
                 <img src="image/unitpendidikan/hero.jpg" alt="hero" className={style.img}/>
             </div>
+
+          
         </div>
     )
 }
