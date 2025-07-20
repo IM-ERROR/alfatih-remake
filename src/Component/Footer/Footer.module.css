@@ -1,0 +1,55 @@
+.footer_container {
+    background-color: #00B2E3;
+    display: flex;
+    justify-content: space-evenly;
+    height: 144px;
+    width: 100%;
+}
+
+.footer_left, .footer_right {
+    font-family: 'Poppins-regular', sans-serif;
+    margin-top: 24px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+}
+
+.shapes:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_fb_yt {
+    height: 25px;
+    width: 100%;
+}
+
+.icons_ig_x {
+    height: 20px;
+    width: 100%;
+}
+
+.title {
+    color: #fff;
+}
+

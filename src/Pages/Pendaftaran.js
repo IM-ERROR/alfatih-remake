@@ -1,3 +1,4 @@
+
 import PendaftaranPage from "../Component/PendaftaranPage/PendaftaranPage";
 
 function Pendaftaran () {

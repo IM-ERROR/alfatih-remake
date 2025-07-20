@@ -11,8 +11,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
+        <Routes><Route path="/" element={<Home />}></Route>
           <Route path="/News" element={<News />}></Route>
           <Route path="/Unit-Pendidikan" element={<UnitPendidikan />}></Route>
           <Route path="/Kerjasama" element={<Kerjasama />}></Route>

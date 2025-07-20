@@ -1,12 +1,24 @@
+*{
+    padding: 0;
+}
+
 .container_nav {
-    background-color: rgba(77, 77, 77, 0.336);
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+}
+
+.logo_nav {
+    background-color: rgb(253, 253, 253);
+    height: 88px;
+    border-radius: 50px 0px;
+
 }
 
 .img_logo {
-    margin: 8px;
+    margin: 16px;
     height: 58px;
     width: 240px;
 }
@@ -21,6 +33,7 @@
     display: flex;
     list-style-type: none;
     gap: 40px;
+    color: white;
 }
 
 .nav_item{
