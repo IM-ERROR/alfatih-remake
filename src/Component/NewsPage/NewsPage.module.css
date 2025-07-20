@@ -1,0 +1,26 @@
+
+
+.heros {
+    display: flex;
+    /* background-image: url(../../../public/image-alfatih/Home/Home.png); */
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kosong {
+    height: 560px;
+}
+
+.title_news {
+    font-size: 48px;
+}
+
+.newsfolder {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
