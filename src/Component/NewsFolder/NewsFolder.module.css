@@ -1,8 +1,33 @@
 .container_folder {
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    height: 260px;
     width: 560px;
     box-shadow: 2px 2px 5px rgb(131, 134, 134);
     border-radius: 24px;
+    display: flex;
+    align-items: center;
 }
 
+.img_news {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    margin-left: 32px;
+}
+
+.description {
+    margin-left: 16px;
+    text-align: left;
+}
+
+.button {
+    background-color: rgb(27, 154, 228);
+    width: 80px;
+    height: 36px;
+    border-radius: 24px;
+}
+
+.button > h6 {
+    text-align: center;
+}

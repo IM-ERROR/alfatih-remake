@@ -53,7 +53,12 @@ function UnitPendidikanPage() {
               <h3>{unit.title}</h3>
               <p>{unit.shortDesc}</p>
             </div>
+<<<<<<< HEAD
           ))}
+=======
+
+          
+>>>>>>> cedf0da8390916af7ea3337e05db6e862e5f3a0b
         </div>
         <div className={styles.details}>
           {selectedUnit?.image && (
