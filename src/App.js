@@ -8,6 +8,8 @@ import Kerjasama from './Pages/Kerjasama';
 import Pendaftaran from './Pages/Pendaftaran';
 import HomeAdmin from './Admin/Pages/HomeAdmin';
 import AddNews from './Admin/Pages/AddNews';
+import AddEvents from './Admin/Pages/AddEvents';
+import AddItem from './Admin/Pages/AddItem';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           {/* ADMIN ROUTES */}
           <Route path='/Admin' element={<HomeAdmin />}></Route>
           <Route path='/Admin/add-news' element={<AddNews />}></Route>
+          <Route path='/Admin/add-event' element={<AddEvents />}></Route>
+          <Route path='/Admin/add-item' element={<AddItem />}></Route>
 
         </Routes>
       </Layout>
