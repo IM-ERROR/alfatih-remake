@@ -1,7 +1,10 @@
+import InputForm from '../InputForm/InputForm';
+import style from './Item.module.css'
+
 function Item() {
     return(
-        <div>
-            <h1>Item</h1>
+        <div className={style.container}>
+            <InputForm formType="Item"/>
         </div>
     )
 }

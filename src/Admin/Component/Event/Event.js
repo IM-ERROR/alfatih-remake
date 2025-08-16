@@ -1,7 +1,10 @@
+import InputForm from '../InputForm/InputForm'
+import style from './Event.module.css'
+
 function Event() {
     return(
-        <div>
-            <h1>Event</h1>
+        <div className={style.container}>
+            <InputForm formType="Event"/>
         </div>
     )
 }

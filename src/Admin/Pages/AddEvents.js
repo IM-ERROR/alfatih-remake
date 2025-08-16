@@ -2,7 +2,9 @@ import Event from "../Component/Event/Event"
 
 function AddEvents() {
     return(
-        <Event />
+        <div>
+            <Event />
+        </div>
     )
 }
 
