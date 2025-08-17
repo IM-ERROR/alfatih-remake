@@ -27,24 +27,22 @@ function InputForm(props) {
             {
                 title: title,
                 content: content,
-                formType: type
+                type: parseInt(type)
             }
         ).then((res) => {
-            console.log(`Suceeded add new data ${res}`);
-            
+            console.log(res.data);
         })
     }
 
     function handleClick(e) {
-        if (!title || !content || !formType) {
+        e.preventDefault();
+        if (!title || !content || !type) {
             alert("Data cannot be empty");
-            e.preventDefault();
         } else {
             
             addData()
             alert("Succeded add new data")
         }
-
     }
 
     return (
