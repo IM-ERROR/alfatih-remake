@@ -1,15 +1,18 @@
 //IMPORT EXPRESS PACKAGE
 const express = require('express')
 const app = express()
+const cors = require('cors')
 
 //TRY TO GET DEFAULT SERVER PORT OR SET IT TO "8080"
 const port = process.env.PORT || 8080
+app.use(cors());
 
 //SIMPLIFY ROUTES IN ROUTES FOLDER
 const routes = require('./routes/routes.js');
 
 //GET DEFAULT PAGE USING ROUTES
-app.get('/', routes)
+app.get('/news', routes)
+app.post('/news', routes)
 
 
 //LISTENING SERVER BY PORT
