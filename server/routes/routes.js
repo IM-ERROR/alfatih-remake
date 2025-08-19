@@ -20,23 +20,54 @@ routes.use(bodyParser.json())
 routes.use(cors())
 
 
+/**
+ * 
+ * All Routes for News
+ * 
+ */
 
-//TESTING ON DEFAULT PAGE
-routes.get('/', (req, res) => {
-    //RETURNING RESPONSE FROM TABLE ADIDAS
-    db.query("SELECT * FROM adidas", (err, result) => {
-        //IF ERROR OCCURS, RETURN 500 INTERNAL SERVER ERROR
-        if (err) {
-            return response(500, null, "Internal Server Error", res);
-        }
-        //IF NO DATA FOUND, RETURN 404 NOT FOUND
-        if (result.length === 0) {
-            return response(404, null, "Data Not Found", res);
-        }
-        //IF SUCCESS, RETURN 200 OK WITH DATA
-        return response(200, result, "GET ALL ADIDAS SHOES", res);
+routes.get('/news', (req,res) => {
+    db.query("SELECT * FROM tbl_news", (error, result) => {
+        response(200, result, "GET ALL DATA NEWS", res);
+    })
+})
+
+routes.post('/news', (req, res) => {
+    const {title, content, type} = req.body;
+
+    
+    const sql = `INSERT INTO tbl_news (title, content, news_type) VALUES (?,?,?)`
+    const VALUES = [title, content, type]
+
+    db.query(sql, VALUES, (err, result) => {
+        response(200, result, "TESTING POST", res);
     })
 
 })
+
+/**
+ * 
+ * All Routes for Event
+ * 
+ */
+
+routes.get('/event', (req,res) => {
+    db.query("SELECT * FROM tbl_news", (error, result) => {
+        response(200, result, "GET ALL DATA NEWS", res);
+    })
+})
+
+/**
+ * 
+ * All Rotues for Item
+ * 
+ */
+
+routes.get('/item', (req,res) => {
+    db.query("SELECT * FROM tbl_news", (error, result) => {
+        response(200, result, "GET ALL DATA NEWS", res);
+    })
+})
+
 
 module.exports = routes;

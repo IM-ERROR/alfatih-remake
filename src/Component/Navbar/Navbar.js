@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className={style.container_nav}>
             <div className={style.logo_nav}>
-                <img className={style.img_logo} src='./image-alfatih/AL-FATIH_logo.png' alt='image/Logo' />
+                <img className={style.img_logo} src='/image-alfatih/AL-FATIH_logo.png' alt='image/Logo' />
             </div>
             <div className={style.menu_nav}>
                 <ul>
