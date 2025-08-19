@@ -13,7 +13,7 @@ const school = [
     id: 'smk',
     title: 'SMK IT Multimedia',
     shortDesc: 'SMK IT Multimedia berfokus pada penguasaan keahlian di bidang teknologi multimedia dan konten multimedia dalam sistem terdistribusi',
-    longDesc: 'Unit pendidikan SMK IT Multimedia AL Fatih adalah unit pendidikan lanjutan untuk santri lulusan sekolah menengah pertama yang melanjutkan di PPM IT Mutimedia AL Fatih. Pendidikan pada unit SMK menekankan kepada Al-Qur’an, ilmu lanjutan agama , bahasa arab & bahasa inggris dan praktikum IT Multimedia lebih banyak karena memang dipersiapkan untuk siap dalam dunia dakwah dan kerja',
+    longDesc: 'Unit pendidikan SMK IT Multimedia AL Fatih adalah unit pendidikan lanjutan untuk santri lulusan sekolah menengah pertama yang melanjutkan di PPM IT Mutimedia AL Fatih. Pendidikan pada unit SMK menekankan kepada Al-Qur’an, ilmu lanjutan agama, bahasa arab & bahasa inggris dan praktikum IT Multimedia lebih banyak karena memang dipersiapkan untuk siap dalam dunia dakwah dan kerja',
     image: 'image/unitpendidikan/smk.jpg'
   },
   {
@@ -53,12 +53,7 @@ function UnitPendidikanPage() {
               <h3>{unit.title}</h3>
               <p>{unit.shortDesc}</p>
             </div>
-<<<<<<< HEAD
           ))}
-=======
-
-          
->>>>>>> cedf0da8390916af7ea3337e05db6e862e5f3a0b
         </div>
         <div className={styles.details}>
           {selectedUnit?.image && (
