@@ -38,29 +38,31 @@ function UnitPendidikanPage() {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.hero}>
         <img src='image/unitpendidikan/hero.jpg' alt='hero'></img>
       </div>
-      <h2 className={styles.heading}>UNIT PENDIDIKAN</h2>
-      <div className={styles.content}>
-        <div className={styles.cards}>
-          {school.map(unit => (
-            <div
-              key={unit.id}
-              className={`${styles.card} ${unit.id === selectedId ? styles.active : ''}`}
-              onClick={() => setSelectedId(unit.id)}
-            >
-              <h3>{unit.title}</h3>
-              <p>{unit.shortDesc}</p>
-            </div>
-          ))}
-        </div>
-        <div className={styles.details}>
-          {selectedUnit?.image && (
-            <img src={selectedUnit.image} alt={selectedUnit.title} className={styles.image} />
-          )}
-          <h3>{selectedUnit.title}</h3>
-          <p>{selectedUnit.longDesc}</p>
+      <div className={styles.main}>
+        <h2 className={styles.heading}>UNIT PENDIDIKAN</h2>
+        <div className={styles.content}>
+          <div className={styles.cards}>
+            {school.map(unit => (
+              <div
+                key={unit.id}
+                className={`${styles.card} ${unit.id === selectedId ? styles.active : ''}`}
+                onClick={() => setSelectedId(unit.id)}
+              >
+                <h3>{unit.title}</h3>
+                <p>{unit.shortDesc}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.details}>
+            {selectedUnit?.image && (
+              <img src={selectedUnit.image} alt={selectedUnit.title} className={styles.image} />
+            )}
+            <h3>{selectedUnit.title}</h3>
+            <p>{selectedUnit.longDesc}</p>
+          </div>
         </div>
       </div>
     </div>
