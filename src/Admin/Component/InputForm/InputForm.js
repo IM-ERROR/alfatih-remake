@@ -22,7 +22,7 @@ function InputForm(props) {
         })
     }
 
-    function addData() {
+    function addDataNews() {
         axios.post('http://localhost:8080/news',
             {
                 title: title,
@@ -35,13 +35,31 @@ function InputForm(props) {
     }
 
     function handleClick(e) {
-        e.preventDefault();
         if (!title || !content || !type) {
+            e.preventDefault();
             alert("Data cannot be empty");
+            
         } else {
             
-            addData()
-            alert("Succeded add new data")
+            switch (formType) {
+                
+                case "News":
+                    alert("Succeded add new data News")
+                    break;
+
+                case "Event":
+                    alert("Succeded add new data Event")
+                    break;
+
+                case "Item":
+                    alert("Succeded add new data Item")
+                    break;
+
+                default:
+                    break;
+            }
+            // addData()
+
         }
     }
 

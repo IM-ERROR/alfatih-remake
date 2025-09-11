@@ -49,10 +49,12 @@ routes.post('/news', (req, res) => {
  * 
  * All Routes for Event
  * 
+ * Event will get just upcoming event when the date are more than -7 day
+ * 
  */
 
 routes.get('/event', (req,res) => {
-    db.query("SELECT * FROM tbl_news", (error, result) => {
+    db.query("SELECT * FROM tbl_event", (error, result) => {
         response(200, result, "GET ALL DATA NEWS", res);
     })
 })
@@ -68,6 +70,8 @@ routes.get('/item', (req,res) => {
         response(200, result, "GET ALL DATA NEWS", res);
     })
 })
+
+
 
 
 module.exports = routes;

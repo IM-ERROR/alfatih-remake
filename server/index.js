@@ -11,8 +11,23 @@ app.use(cors());
 const routes = require('./routes/routes.js');
 
 //GET DEFAULT PAGE USING ROUTES
+/**
+ * News Routes
+ */
 app.get('/news', routes)
 app.post('/news', routes)
+
+/**
+ * Event Routes
+ */
+app.get("/event", routes)
+app.post("/event", routes)
+
+/**
+ * Item Routes
+ */
+app.get("/item", routes)
+app.post("item", routes)
 
 
 //LISTENING SERVER BY PORT
