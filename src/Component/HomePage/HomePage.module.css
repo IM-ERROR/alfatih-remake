@@ -1,8 +1,9 @@
 
 .heros {
     display: flex;
-    background-image: url(../../../public/image-alfatih/Home/Home.png);
-    height: 1200px;
+    background-image: url(../../../public/image-alfatih/Home/Home-Back.png);
+    height: 1000px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -10,6 +11,31 @@
     flex-direction: column;
 }
 
-.kosong {
-    height: 560px;
+.two_icone {
+    display: flex;
+    gap: 320px;
+    position: absolute;
+}
+
+.org {
+    height: 700px;
+    width: 700px;
+}
+
+.logo {
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.kosong{
+    margin-top: 640px;
+}
+
+.arrow {
+    position: relative;
+}
+
+.arrow:hover {
+    cursor: pointer;
 }

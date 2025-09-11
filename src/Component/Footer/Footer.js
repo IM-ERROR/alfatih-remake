@@ -17,7 +17,7 @@ function Footer() {
                                 <a href="https://www.facebook.com/pp.itmultimediaalfatih">
                                     <img
                                         className={`${style.icons_fb_yt} ${style.icons}`}
-                                        src="/image/footer/fb.png"
+                                        src="image-alfatih/footer/fb.png"
                                         alt="fb"
                                     ></img>
                                 </a>
@@ -27,7 +27,7 @@ function Footer() {
                                 <a href="https://www.instagram.com/pp.itmultimediaalfatih/">
                                     <img
                                         className={`${style.icons_ig_x} ${style.icons}`}
-                                        src="/image/footer/ig.png"
+                                        src="image-alfatih/footer/ig.png"
                                         alt="ig"
                                     ></img>
                                 </a>
@@ -37,7 +37,7 @@ function Footer() {
                                 <a href="https://www.youtube.com/@uimchannel-UstadzIndraMartian">
                                     <img
                                         className={`${style.icons_fb_yt} ${style.icons}`}
-                                        src="/image/footer/yt.png"
+                                        src="image-alfatih/footer/yt.png"
                                         alt="yt"
                                     ></img>
                                 </a>
@@ -47,7 +47,7 @@ function Footer() {
                                 <a href="https://x.com/home">
                                     <img
                                         className={`${style.icons_ig_x} ${style.icons}`}
-                                        src="/image/footer/x.png"
+                                        src="image-alfatih/footer/x.png"
                                         alt="x"
                                     ></img>
                                 </a>
